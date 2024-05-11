@@ -1,0 +1,61 @@
+.containerInput{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 90%;
+}
+
+.containerInput legend {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--customTxt);
+  width: 100%;
+}
+
+.containerInput #bill{
+  background: url(../../assets/icon-dollar.svg) no-repeat 10px ;
+}
+.containerInput #people{
+  background: url(../../assets/icon-person.svg) no-repeat 10px ;
+}
+.containerInput input{
+  text-align: right;
+  padding-right: 10px;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  color: var(--activeTxt);
+
+}
+
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none; 
+}
+
+.containerInput input:focus{
+  border: 2px solid var(--active);
+  border-radius: 5px;
+}
+
+.default{
+  display: none;
+}
+
+.warning{
+  display: block;
+  color: hsl(13, 35%, 57%);
+  font-weight: 700;
+}
+.warningInput{
+  border: 2px solid hsl(13, 35%, 57%) !important;
+  border-radius: 5px;
+}

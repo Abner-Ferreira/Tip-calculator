@@ -1,0 +1,54 @@
+.default, .active, .defaultCustom{
+  border: none;
+  height: 40px;
+  width: 125px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: larger;
+}
+
+.default:hover, .active:hover, .defaultCustom:hover{
+  cursor: pointer;
+}
+
+.default{
+  background-color: var(--defaultBg);
+  color: var(--defaultTxt);
+}
+
+.active{
+  background-color: var(--active);
+  color: var(--activeTxt);
+}
+
+.defaultCustom{
+  color: var(--customTxt);
+  background-color: var(--bgCalculator);
+}
+#customInput{
+  width: 125px;
+  height: 40px;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  color: var(--activeTxt);
+}
+
+#customInput:focus{
+  border: 2px solid var(--active);
+  border-radius: 5px;
+}
+
+@media (max-width: 630px) {
+  .default, .active, .defaultCustom{
+    height: 40px;
+    width: 90px;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: larger;
+  }
+  
+}

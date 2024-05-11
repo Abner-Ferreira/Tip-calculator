@@ -1,0 +1,32 @@
+.containerTips{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.containerTips span{
+  color: var(--customTxt);
+}
+
+.porcents{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+#custom{
+  background-color: var(--bgCalculator);
+  color: var(--customTxt);
+}
+
+@media (max-width: 630px) {
+  .porcents{
+    gap: 10px;
+  }
+}
+

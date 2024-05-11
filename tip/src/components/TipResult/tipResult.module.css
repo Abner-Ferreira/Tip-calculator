@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin: 30px 0;
+}
+.divTotal{
+  font-weight: 700;
+}
+.title{
+  color: var(--bgCalculator);
+  font-size: 16px;
+  margin: 20px 0 0 0;
+}
+.span{
+  color: var(--customTxt);
+  font-size: small;
+}
+.total{
+  color: var(--active);
+  font-weight: 700;
+  font-size: 34px;
+  text-align: center;
+}

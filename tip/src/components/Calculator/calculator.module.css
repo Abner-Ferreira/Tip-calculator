@@ -1,0 +1,128 @@
+.container{
+  background-color: var(--bgCalculator);
+  height: 60%;
+  width: 50%;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.calculator{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 55px;
+  width: 50%;
+  height: 80%;
+  margin: 0 0 0 40px;
+}
+
+.porcentsContainer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#custom{
+  width: 100px;
+  height: 40px;
+  outline: none;
+  text-align: right;
+  padding-right: 10px;
+  font-size: 24px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  color: var(--activeTxt);
+}
+#custom:focus{
+  border: 2px solid var(--active);
+  border-radius: 5px;
+}
+
+#custom::-webkit-inner-spin-button, 
+#custom::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    appearance: none; 
+}
+
+
+.result{
+  background-color: var(--defaultBg);
+  width: 50%;
+  height: 80%;
+  border-radius: 40px;
+  margin: 0 40px 0 0  ;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+}
+
+.divResult{
+  width: 80%;
+}
+
+#resetBtn{
+  background-color: var(--btnReset);
+  color: var(--defaultTxt);
+  outline: none;
+  border: none;
+  height: 40px;
+  width: 80%;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--defaultBg);
+}
+
+.btnAtivo{
+  background-color: var(--active) !important;
+  
+}
+
+@media (max-width: 630px) {
+  .container{
+    height: 100%;
+    width: 100%;
+    border-radius: 40px 40px 0 0;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .calculator{
+    gap: 30px;
+    width: 80%;
+    max-width: 90%;
+    height: 50%;
+    margin: 40px 0 0 0;
+  }
+  .porcentsContainer{
+    gap: 10px;
+    width: 100%;
+  }
+  .result{
+    background-color: var(--defaultBg);
+    width: 70%;
+    height: 60%;
+    border-radius: 40px;
+    margin: 0 0 50px 0  ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+  
+}
+
+@media (min-width: 631px) and (max-width: 1260px) {
+  .container{
+    width: 90%;
+  }
+}
