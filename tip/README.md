@@ -4,7 +4,7 @@
 
 ## 📸 Project Preview
 
-![Tip Calculator Screenshot](./assets/tip-calculator-fullpage.png)  
+![Tip Calculator Screenshot](./src/assets/tip-calculator-fullpage.png)  
 
 
 ## 🚀 Project Overview
